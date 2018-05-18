@@ -1,6 +1,7 @@
                 body{
                  font-family:AvantGardeITCbyBT-Book, sans-serif;
                  transition: 0.8s;
+                 z-index: -8;
                 }
                 /*start of header*/
                 .header{
@@ -140,7 +141,7 @@
             position: relative;
             left: -8px;
             top: -117px;
-            z-index: -1;
+            z-index: 0;
            }
            .imageslider .e-homepage,.agd3kart,.worldcup,.banner{
             width:100%;
@@ -171,28 +172,32 @@
             bottom:10px;
             left:500px;
            }
-           .pic1:focus  +  .agd3kart {
+           .pic1:hover  +  .agd3kart {
+           position: absolute;
             z-index:3;
            }
            .imageslider .pic2{
             bottom:10px;
             left:550px;
            }
-           .pic2:focus  +  .banner {
+           .pic2:hover  +  .banner {
+                      position: absolute;
             z-index:4;
            }
            .imageslider .pic3{
             bottom:10px;
             left:600px;
            }
-           .pic3:focus  +  .worldcup {
+           .pic3:hover  +  .worldcup {
+                      position: absolute;
             z-index:5;
            }
            .imageslider .pic4{
             bottom:10px;
             left:650px;
            }
-           .pic4:focus  +  .e-homepage {
+           .pic4:hover  +  .e-homepage {
+                      position: absolute;
             z-index:6;
            }            
             
